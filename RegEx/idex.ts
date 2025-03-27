@@ -1,5 +1,5 @@
 //Password validation:
-const passwordRegex: RegExp = /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*&])[A-Za-z\d@!$*%&?]{8,}$/;
+const passwordRegex: RegExp = /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%+*&])[A-Za-z\d@!$*%+&?]{8,}$/;
 const isValidPassword = (password: string):boolean => {
     return passwordRegex.test(password);
 }
