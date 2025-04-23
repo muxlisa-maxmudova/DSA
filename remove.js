@@ -1,14 +1,13 @@
-head = [1,1,2,3,3]
-function removeDuplicates(list){
-   let nums = 0;
-   let newList = [];
-    for (i = 0; i < list.length; i++) {
-        elem = list[i]
-        if(elem === list[i+1]){
+function removeDuplicates(head){
+    let nums = 0;
+    let newList = [];
+    for (i = 0; i < head.length; i++) {
+        elem = head[i]
+        if(elem !== head[i+1]){
             nums = elem
             newList.push(nums)
         }
     }
     console.log(newList)
 }
-removeDuplicates(head)
+removeDuplicates([1,1,2]) // check for sorted list
