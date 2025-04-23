@@ -4,7 +4,7 @@ const isValidPhone = (phone:string): boolean => {
     return phoneRegex.test(phone);
 }
 //Checking here:
-console.log(isValidPhone('+99890 12345 67'))// Since space is optional with ?, but if I remove ? then it will return false, because it will become obligatory then!
+console.log(isValidPhone('+998 90 123 45 67'))// Since space is optional with ?, but if I remove ? then it will return false, because it will become obligatory then!
 //Output:
 //True
 
